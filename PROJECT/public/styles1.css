@@ -1,7 +1,125 @@
-
-#icon_nav{
-    background-color: #2D46B9;
+#icon_nav {
+  background-color: #2d46b9;
 }
-#nav_bar{
-    background-color: #1E3163;
+#nav_bar {
+  background-color: #1e3163;
+}
+.main {
+  font: 15px/20px Arial, sans-serif;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery {
+  margin: 0 auto;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  top: 25vh;
+}
+.carousel div {
+  transform-style: preserve-3d;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 1s;
+  cursor: pointer;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  border: 1px solid gray;
+}
+.item > img {
+  height: 150px;
+  display: inline;
+}
+.a {
+  transform: rotateX(0deg) translateZ(150px);
+}
+.a .item {
+  background-image: url("./img/sw.jpg");
+  background-size: cover;
+}
+.b {
+  transform: rotateX(60deg) translateZ(150px) rotateX(-60deg);
+}
+.b .item {
+  background-image: url("./img/sw.jpg");
+  background-size: cover;
+}
+.c {
+  transform: rotateX(120deg) translateZ(150px) rotateX(-120deg);
+}
+.c .item {
+  background-image: url("./img/sw.jpg");
+  background-size: cover;
+}
+.d {
+  transform: rotateX(180deg) translateZ(150px) rotateX(-180deg);
+}
+.d .item {
+  background-image: url("./img/sw.jpg");
+  background-size: cover;
+}
+.e {
+  transform: rotateX(240deg) translateZ(150px) rotateX(-240deg);
+}
+.e .item {
+  background-image: url("./img/sw.jpg");
+  background-size: cover;
+}
+.f {
+  transform: rotateX(300deg) translateZ(150px) rotateX(-300deg);
+}
+.f .item {
+  background-image: url("./img/sw.jpg");
+  background-size: cover;
+}
+
+.next,
+.prev {
+  color: #444;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 5px;
+  border-top: 1px solid #fff;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;
+  width: 30%;
+}
+.next:hover,
+.prev:hover {
+  color: #000;
+}
+.next:active,
+.prev:active {
+  top: 104px;
+  box-shadow: 0 1px 0 #999;
+}
+.next {
+  top: 1px;
+}
+.prev {
+  left: 5em;
+}
+.empty {
+  margin-top: 50vh;
 }
