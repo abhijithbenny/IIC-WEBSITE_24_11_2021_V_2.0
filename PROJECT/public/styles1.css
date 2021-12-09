@@ -123,3 +123,48 @@
 .empty {
   margin-top: 50vh;
 }
+
+.menu {
+}
+.innovation {
+  position: absolute;
+  top: 140px;
+  left: 170px;
+}
+.product {
+  position: absolute;
+  top: 170px;
+  left: 460px;
+}
+.startup {
+  position: absolute;
+  top: 380px;
+  left: 380px;
+}
+.slogan {
+  position: absolute;
+  top: 650px;
+  left: 170px;
+}
+.innovation-text {
+  position: absolute;
+  top: 317px;
+  left: 278px;
+  font-size: 30px;
+  color: #fff;
+}
+.product-text {
+  position: absolute;
+  top: 270px;
+  left: 552px;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+.startup-text {
+  position: absolute;
+  top: 500px;
+  left: 470px;
+  font-size: 25px;
+  color: #fff;
+}
